@@ -1,0 +1,70 @@
+User	Tweet	Date	Stats	Link
+Sarah Chen
+@SarahChen_AI
+Just published our latest paper on multi-modal foundation models with improved cross-attention mechanisms. Excited to present at #ICLR2025! https://t.co/abc123def	3/19/2025, 9:15:32 PM	
+15 Likes
+8 Retweets
+Link unavailable
+
+Sarah Chen
+@SarahChen_AI
+Fascinating discussions at #GTC2025 about the convergence of neuromorphic computing and large language models. The future of AI hardware is evolving rapidly! https://t.co/xyz789	3/19/2025, 4:22:15 PM	
+23 Likes
+12 Retweets
+Link unavailable
+
+Sarah Chen
+@SarahChen_AI
+RT @AIResearch_Lab: Breakthrough in transformer architecture scaling! Our team's latest research shows 40% improvement in parameter efficiency while maintaining performance. https://t.co/def456	3/18/2025, 2:45:18 PM	
+45 Likes
+28 Retweets
+Link unavailable
+
+Sarah Chen
+@SarahChen_AI
+Excited to announce our lab's collaboration with @NVIDIA on developing next-gen AI accelerators optimized for sparse neural networks! https://t.co/ghi789	3/18/2025, 11:30:05 AM	
+67 Likes
+34 Retweets
+Link unavailable
+
+Sarah Chen
+@SarahChen_AI
+@DeepMind_Research The integration of causal reasoning in LLMs is crucial. Our recent experiments show promising results in zero-shot logical inference tasks.	3/17/2025, 3:15:42 PM	
+19 Likes
+7 Retweets
+Link unavailable
+
+Sarah Chen
+@SarahChen_AI
+New preprint: "Efficient Training of Trillion-Parameter Models through Gradient Compression and Dynamic Sparsity" - Comments welcome! https://t.co/jkl012	3/17/2025, 10:20:33 AM	
+89 Likes
+45 Retweets
+Link unavailable
+
+Sarah Chen
+@SarahChen_AI
+Reflecting on the ethical implications of AGI development after today's panel at Stanford. We need more interdisciplinary collaboration between AI researchers and ethicists. https://t.co/mno345	3/16/2025, 8:45:19 PM	
+56 Likes
+23 Retweets
+Link unavailable
+
+Sarah Chen
+@SarahChen_AI
+Excited to be speaking at next month's Workshop on Trustworthy AI @Berkeley! Will be discussing our latest work on interpretable neural architectures. https://t.co/pqr678	3/16/2025, 2:10:55 PM	
+34 Likes
+15 Retweets
+Link unavailable
+
+Sarah Chen
+@SarahChen_AI
+RT @AI_Ethics_Lab: Important discussion on ensuring fairness and accountability in AI systems. Join us for the virtual roundtable next week.	3/15/2025, 5:30:28 PM	
+28 Likes
+14 Retweets
+Link unavailable
+
+Sarah Chen
+@SarahChen_AI
+New blog post: "Understanding the Trade-offs in Large Language Model Training" - Diving deep into computational efficiency vs model performance https://t.co/stu901	3/15/2025, 11:25:47 AM	
+72 Likes
+38 Retweets
+Link unavailable

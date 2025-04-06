@@ -1,0 +1,31 @@
+Birth Time: Lunar Calendar, between 05:00-06:00
+Birthplace:
+Gender: Female
+User's actual Web3 and Binance holdings and swap data
+
+Holdings: ETH: 45.67 ($131,234.56), WETH: 23.45 ($67,890.12), USDC: 89567.89 ($89,567.89), BAYC #4532 (1 NFT, $145,678.90), MAYC #2345 (2 NFTs, $89,567.89), CryptoPunk #7890 (1 NFT, $234,567.89), Azuki #1234 (2 NFTs, $78,901.23), Doodles #5678 (3 NFTs, $45,678.90), CloneX #9012 (1 NFT, $56,789.01), World of Women #3456 (2 NFTs, $34,567.89), Cool Cats #7890 (1 NFT, $23,456.78), DeGods #2345 (1 NFT, $45,678.90), Moonbirds #6789 (2 NFTs, $67,890.12), VeeFriends #1234 (1 NFT, $34,567.89), PROOF Collective Pass #567 (1 NFT, $89,567.89)
+
+Profit/Loss:
+Total: $234,567.89
+Realized: $156,789.01
+Unrealized: $77,778.88
+
+Recent Trades:
+2025-03-19 15:45:30 buy BAYC #4532 with WETH, $145,678.90
+2025-03-19 12:30:15 sell MAYC #3456 for ETH, $45,678.90
+2025-03-19 09:15:45 buy Azuki #1234 with ETH, $39,567.89
+2025-03-18 22:45:30 sell CryptoPunk #5678 for WETH, $189,567.89
+2025-03-18 19:30:15 buy Doodles #5678 with ETH, $15,678.90
+2025-03-18 16:15:45 sell CloneX #4567 for USDC, $45,678.90
+2025-03-18 13:45:30 buy World of Women #3456 with WETH, $17,890.12
+2025-03-18 10:30:15 sell Cool Cats #5678 for ETH, $18,901.23
+2025-03-17 23:45:30 buy DeGods #2345 with USDC, $45,678.90
+2025-03-17 20:15:45 sell Moonbirds #4567 for WETH, $34,567.89
+2025-03-17 17:30:15 buy VeeFriends #1234 with ETH, $34,567.89
+2025-03-17 14:45:30 sell PROOF Collective Pass #789 for USDC, $78,901.23
+2025-03-17 11:15:45 buy MAYC #2345 with WETH, $44,567.89
+2025-03-17 08:30:15 sell Azuki #5678 for ETH, $35,678.90
+2025-03-16 22:45:30 buy Doodles #5679 with USDC, $14,567.89
+2025-03-16 19:15:45 sell World of Women #7890 for WETH, $15,678.90
+2025-03-16 16:30:15 buy Moonbirds #6789 with ETH, $33,456.78
+2025-03-16 13:45:30 sell VeeFriends #5678 for USDC, $29,567.89
