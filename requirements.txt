@@ -1,0 +1,14 @@
+fastapi==0.104.1
+uvicorn==0.23.2
+pydantic==2.4.2
+python-dotenv==1.0.0
+httpx==0.25.0
+pytest==7.4.3
+pytest-asyncio==0.21.1
+langchain==0.0.335
+langchain-openai==0.0.2
+openai==1.2.4
+tiktoken==0.5.1
+numpy==1.26.1
+pandas==2.1.2
+python-multipart==0.0.6
