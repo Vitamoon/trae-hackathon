@@ -102,7 +102,7 @@ class UserAnalyzer:
         
         # Combine metrics
         return {
-            "username": twitter_data["username"],
+            "username": twitter_data['tweets'][0]['text'],
             "user_id": user_data["user_id"],
             "total_profit_loss": total_profit_loss,
             "realized_profit_loss": realized_profit_loss,

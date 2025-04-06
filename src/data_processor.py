@@ -114,21 +114,38 @@ class DataProcessor:
         with open(file_path, 'r', encoding='utf-8') as file:
             lines = file.readlines()
         
-        # Extract user info from the first line
-        user_info = lines[0].strip().split('\n')[0]
-        username = user_info
+        # Handle empty files
+        if not lines:
+            return {
+                "username": "",
+                "handle": "",
+                "tweets": []
+            }
         
-        # Extract handle from the second line
+        # Extract user info - handle case where username appears twice
+        username = lines[0].strip()
+        
+        # Skip duplicate username line if present
+        start_idx = 1
+        if len(lines) > 1 and lines[1].strip() == username:
+            start_idx = 2
+        
+        # Extract handle from the next line if available
         handle = ""
-        if len(lines) > 1:
-            handle_match = re.search(r'@(\w+)', lines[1].strip())
+        if len(lines) > start_idx:
+            handle_match = re.search(r'@(\w+)', lines[start_idx].strip())
             if handle_match:
                 handle = handle_match.group(0)
+                start_idx += 1
         
         tweets = []
         current_tweet = {}
         
-        for i in range(2, len(lines)):
+        # Skip header lines if present
+        if len(lines) > start_idx and "User\tTweet\tDate\tStats\tLink" in lines[start_idx]:
+            start_idx += 1
+        
+        for i in range(start_idx, len(lines)):
             line = lines[i].strip()
             
             # Skip empty lines
@@ -163,6 +180,10 @@ class DataProcessor:
         # Add the last tweet if it exists
         if current_tweet and "text" in current_tweet:
             tweets.append(current_tweet)
+        
+        # Handle case where tweets array is empty
+        if not tweets:
+            tweets = [{"text": "No tweets found"}]
         
         return {
             "username": username,

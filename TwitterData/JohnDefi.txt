@@ -1,3 +1,4 @@
+User	Tweet	Date	Stats	Link
 John DeFi
 @JohnDeFi_Trader
 New yield farming strategy on @AaveAave just hit 42% APY. Here's my detailed analysis of the risks and potential returns https://t.co/aave123	3/19/2025, 7:15:30 PM	

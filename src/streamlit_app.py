@@ -98,7 +98,7 @@ try:
             # Extract recent activities from friends
             recent_activities = []
             for friend in friend_data[:5]:  # Limit to 5 friends
-                username = friend['twitter_data']['username']
+                username = friend['twitter_data']['tweets'][0]['text']
                 # Fix username if it's showing as "User Tweet Date Stats Link"
                 if username == "User Tweet Date Stats Link":
                     username = friend['user_id']
@@ -204,7 +204,6 @@ try:
                 names="Asset",
                 title="Holdings Distribution",
                 height=300,
-                color_discrete_sequence=px.colors.sequential.Purp
             )
             st.plotly_chart(fig, use_container_width=True)
         else:
