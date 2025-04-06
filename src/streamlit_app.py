@@ -34,6 +34,26 @@ with st.sidebar:
     selected_user_id = st.selectbox("Select a user", all_users)
     include_friends = st.checkbox("Include friend data for recommendations", value=True)
     max_recommendations = st.slider("Maximum number of recommendations", 1, 10, 5)
+    
+    # Add Powered by PinAI section
+    st.markdown("---")
+    col1, col2 = st.columns([2, 3.5])
+    with col1:
+        st.markdown("### Powered by")
+    with col2:
+        st.image("img/logo-pinai.png", width=120)
+    
+    # Add supported platforms at the bottom of the sidebar
+    st.markdown("---")
+    st.markdown("### Supports:")
+    logo_col1, logo_col2, logo_col3 = st.columns([1.0, 0.6, 0.8])
+    with logo_col1:
+        st.image("img/logo-twitter.png", width=120)
+    with logo_col2:
+        st.image("img/logo-bitcoin.png", width=80)
+    with logo_col3:
+        st.image("img/logo-ethereum.png", width=40)
+    st.markdown("*and more!*", help="Supports various blockchain networks and social platforms")
 
 # Load user data
 try:
@@ -57,7 +77,8 @@ try:
     portfolio_summary = recommendation_engine.generate_summary(user_data, recommendations)
     
     # Display user information
-    st.header(f"User: {user_data['twitter_data']['username']} ({user_data['twitter_data']['handle']})")
+    username = user_data['twitter_data']['tweets'][0]['text']
+    st.header(f"User: {username}")
     
     # Landing Page - Network Position and Portfolio Overview
     st.subheader("Your Investment Network Overview")
@@ -73,29 +94,46 @@ try:
         # Recent news from friends
         st.markdown("### Recent Activity in Your Network")
         
-        # Extract recent activities from friends
-        recent_activities = []
-        for friend in friend_data[:5]:  # Limit to 5 friends
-            username = friend['twitter_data']['username']
-            # Get most recent trade
-            if friend['web3_data']['recent_trades']:
-                recent_trade = friend['web3_data']['recent_trades'][0]
-                recent_activities.append({
-                    "username": username,
-                    "action": f"{recent_trade['action'].upper()} {recent_trade['asset']}",
-                    "value": recent_trade['value_usd'],
-                    "timestamp": recent_trade['timestamp']
-                })
-        
-        if recent_activities:
-            activities_df = pd.DataFrame(recent_activities)
-            activities_df['timestamp'] = pd.to_datetime(activities_df['timestamp'])
-            activities_df = activities_df.sort_values('timestamp', ascending=False)
+        if friend_data:
+            # Extract recent activities from friends
+            recent_activities = []
+            for friend in friend_data[:5]:  # Limit to 5 friends
+                username = friend['twitter_data']['username']
+                # Fix username if it's showing as "User Tweet Date Stats Link"
+                if username == "User Tweet Date Stats Link":
+                    username = friend['user_id']
+                # Get most recent trade
+                if friend['web3_data']['recent_trades']:
+                    recent_trade = friend['web3_data']['recent_trades'][0]
+                    recent_activities.append({
+                        "username": username,
+                        "action": f"{recent_trade['action'].upper()} {recent_trade['asset']}",
+                        "value": recent_trade['value_usd'],
+                        "timestamp": recent_trade['timestamp']
+                    })
             
-            for _, activity in activities_df.iterrows():
-                st.markdown(f"**{activity['username']}** {activity['action']} worth ${activity['value']:,.2f}")
+            if recent_activities:
+                activities_df = pd.DataFrame(recent_activities)
+                activities_df['timestamp'] = pd.to_datetime(activities_df['timestamp'])
+                activities_df = activities_df.sort_values('timestamp', ascending=False)
+                
+                for _, activity in activities_df.iterrows():
+                    # Format the timestamp to be more readable
+                    timestamp = activity['timestamp']
+                    time_str = timestamp.strftime('%b %d, %Y')
+                    # Fix username if it's showing as "User Tweet Date Stats Link"
+                    display_username = activity['username']
+                    if display_username == "User Tweet Date Stats Link":
+                        # Use a more appropriate name if available
+                        for friend in friend_data:
+                            if friend['twitter_data']['username'] == display_username:
+                                display_username = friend['user_id']
+                                break
+                    st.markdown(f"**{display_username}** {activity['action']} worth ${activity['value']:,.2f} on {time_str}")
+            else:
+                st.info("No recent trading activities from your network.")
         else:
-            st.info("No recent activities from your network.")
+            st.info("Enable 'Include friend data for recommendations' in the sidebar to see network activity.")
     
     with col2:
         # Network comparison visualization
@@ -105,8 +143,12 @@ try:
         network_data = []
         for performer in user_performances:
             is_current_user = performer['user_id'] == user_data['user_id']
+            # Fix username if it's showing as "User Tweet Date Stats Link"
+            display_username = performer.get("username", "Unknown")
+            if display_username == "User Tweet Date Stats Link":
+                display_username = performer.get("user_id", "Unknown")
             network_data.append({
-                "Username": performer.get("username", "Unknown"),
+                "Username": display_username,
                 "Total Profit/Loss": performer.get("total_profit_loss", 0),
                 "Holdings Value": performer.get("holdings_value", 0),
                 "Is Current User": is_current_user
@@ -170,27 +212,33 @@ try:
     
     # Display key metrics
     profit_loss = user_data['web3_data']['profit_loss']
-    if profit_loss:
-        col1, col2, col3, col4 = st.columns(4)
-        with col1:
-            st.metric("Total Portfolio Value", f"${sum(holding['value_usd'] for holding in user_data['web3_data']['holdings'].values()):,.2f}")
-        with col2:
-            st.metric("Total Profit/Loss", f"${profit_loss.get('total', 0):,.2f}")
-        with col3:
-            # Calculate user's rank in network
-            user_rank = next((i+1 for i, perf in enumerate(user_performances) if perf['user_id'] == user_data['user_id']), 0)
-            st.metric("Your Network Rank", f"#{user_rank} of {len(user_performances)}")
-        with col4:
-            # Get top asset recommendation
-            top_rec = recommendations[0] if recommendations else None
-            if top_rec:
-                st.metric("Top Recommendation", f"{top_rec['action'].upper()} {top_rec['asset']}")
-            else:
-                st.metric("Top Recommendation", "None available")
+    col1, col2, col3, col4 = st.columns(4)
+    
+    # Calculate total portfolio value safely
+    holdings = user_data['web3_data']['holdings']
+    total_portfolio_value = sum(holding.get('value_usd', 0) for holding in holdings.values()) if holdings else 0
+    
+    with col1:
+        st.metric("Total Portfolio Value", f"${total_portfolio_value:,.2f}")
+    with col2:
+        st.metric("Total Profit/Loss", f"${profit_loss.get('total', 0):,.2f}")
+    with col3:
+        # Calculate user's rank in network
+        user_rank = next((i+1 for i, perf in enumerate(user_performances) if perf['user_id'] == user_data['user_id']), 0)
+        st.metric("Your Network Rank", f"#{user_rank} of {len(user_performances)}")
+    with col4:
+        # Get top asset recommendation
+        top_rec = recommendations[0] if recommendations else None
+        if top_rec:
+            st.metric("Top Recommendation", f"{top_rec['action'].upper()} {top_rec['asset']}")
+        else:
+            st.metric("Top Recommendation", "None available")
     
     st.markdown("---")
     
     # Create tabs for detailed sections
+    st.header("Detailed Analysis")
+    st.markdown("Explore detailed information about your portfolio, social activity, and personalized recommendations.")
     tab1, tab2, tab3, tab4 = st.tabs(["Twitter Data", "Web3 Holdings", "Recent Trades", "Recommendations"])
     
     # Tab 1: Twitter Data
@@ -366,8 +414,12 @@ try:
             # Create a dataframe for display
             performers_data = []
             for performer in top_performers:
+                # Fix username if it's showing as "User Tweet Date Stats Link"
+                display_username = performer.get("username", "Unknown")
+                if display_username == "User Tweet Date Stats Link":
+                    display_username = performer.get("user_id", "Unknown")
                 performers_data.append({
-                    "Username": performer.get("username", "Unknown"),
+                    "Username": display_username,
                     "Total Profit/Loss": performer.get("total_profit_loss", 0),
                     "Holdings Value": performer.get("holdings_value", 0),
                     "Social Influence": performer.get("social_influence_score", 0)

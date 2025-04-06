@@ -221,7 +221,7 @@ class RecommendationEngine:
         Returns:
             Summary text
         """
-        username = user_data["twitter_data"]["username"]
+        username = user_data['twitter_data']['tweets'][0]['text']
         total_holdings_value = sum(holding["value_usd"] for holding in user_data["web3_data"]["holdings"].values())
         profit_loss = user_data["web3_data"]["profit_loss"].get("total", 0)
         
