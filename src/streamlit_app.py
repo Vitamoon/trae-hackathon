@@ -93,47 +93,39 @@ try:
         
         # Recent news from friends
         st.markdown("### Recent Activity in Your Network")
-        
+
         if friend_data:
             # Extract recent activities from friends
             recent_activities = []
             for friend in friend_data[:5]:  # Limit to 5 friends
-                username = friend['twitter_data']['tweets'][0]['text']
-                # Fix username if it's showing as "User Tweet Date Stats Link"
-                if username == "User Tweet Date Stats Link":
-                    username = friend['user_id']
+                friend_username = friend.get("twitter_data", {}).get("tweets", {})[0].get('text')
                 # Get most recent trade
                 if friend['web3_data']['recent_trades']:
                     recent_trade = friend['web3_data']['recent_trades'][0]
                     recent_activities.append({
-                        "username": username,
+                        "username": friend_username,
                         "action": f"{recent_trade['action'].upper()} {recent_trade['asset']}",
                         "value": recent_trade['value_usd'],
                         "timestamp": recent_trade['timestamp']
                     })
-            
+
             if recent_activities:
                 activities_df = pd.DataFrame(recent_activities)
                 activities_df['timestamp'] = pd.to_datetime(activities_df['timestamp'])
                 activities_df = activities_df.sort_values('timestamp', ascending=False)
-                
+
                 for _, activity in activities_df.iterrows():
-                    # Format the timestamp to be more readable
                     timestamp = activity['timestamp']
                     time_str = timestamp.strftime('%b %d, %Y')
-                    # Fix username if it's showing as "User Tweet Date Stats Link"
                     display_username = activity['username']
-                    if display_username == "User Tweet Date Stats Link":
-                        # Use a more appropriate name if available
-                        for friend in friend_data:
-                            if friend['twitter_data']['username'] == display_username:
-                                display_username = friend['user_id']
-                                break
+
                     st.markdown(f"**{display_username}** {activity['action']} worth ${activity['value']:,.2f} on {time_str}")
             else:
                 st.info("No recent trading activities from your network.")
         else:
             st.info("Enable 'Include friend data for recommendations' in the sidebar to see network activity.")
+
+    # Create a line chart for portfolio value over time
     
     with col2:
         # Network comparison visualization
@@ -143,10 +135,7 @@ try:
         network_data = []
         for performer in user_performances:
             is_current_user = performer['user_id'] == user_data['user_id']
-            # Fix username if it's showing as "User Tweet Date Stats Link"
             display_username = performer.get("username", "Unknown")
-            if display_username == "User Tweet Date Stats Link":
-                display_username = performer.get("user_id", "Unknown")
             network_data.append({
                 "Username": display_username,
                 "Total Profit/Loss": performer.get("total_profit_loss", 0),
@@ -413,10 +402,7 @@ try:
             # Create a dataframe for display
             performers_data = []
             for performer in top_performers:
-                # Fix username if it's showing as "User Tweet Date Stats Link"
                 display_username = performer.get("username", "Unknown")
-                if display_username == "User Tweet Date Stats Link":
-                    display_username = performer.get("user_id", "Unknown")
                 performers_data.append({
                     "Username": display_username,
                     "Total Profit/Loss": performer.get("total_profit_loss", 0),

@@ -212,14 +212,14 @@ class RecommendationEngine:
             return f"Consider adding {asset} to your watchlist. {supporting_users_count} successful traders in your network have shown interest, but the confidence score of {asset_data['confidence_score']:.2f} suggests waiting for a better entry point."
     
     def generate_summary(self, user_data: Dict[str, Any], recommendations: List[Dict[str, Any]]) -> str:
-        """Generate a summary of the recommendations and analysis.
+        """Generate a summary of the recommendations and analysis with AI insights.
         
         Args:
             user_data: The main user's data
             recommendations: List of generated recommendations
             
         Returns:
-            Summary text
+            Summary text with AI insights
         """
         username = user_data['twitter_data']['tweets'][0]['text']
         total_holdings_value = sum(holding["value_usd"] for holding in user_data["web3_data"]["holdings"].values())
@@ -231,22 +231,50 @@ class RecommendationEngine:
             action = rec["action"]
             action_counts[action] = action_counts.get(action, 0) + 1
         
-        # Generate summary text
+        # Generate base summary text
         summary = f"Investment Recommendations for {username}\n\n"
         summary += f"Based on the analysis of your portfolio (${total_holdings_value:,.2f} total value) "
         summary += f"and the trading patterns of your network, SocialTradeInsight has generated "
         summary += f"{len(recommendations)} personalized recommendations.\n\n"
         
         if "buy" in action_counts:
+            summary += f"\n \n"
             summary += f"• {action_counts['buy']} buy recommendations for new opportunities\n"
         if "sell" in action_counts:
+            summary += f"\n \n"
             summary += f"• {action_counts['sell']} sell recommendations to optimize your portfolio\n"
         if "hold" in action_counts:
+            summary += f"\n \n"
             summary += f"• {action_counts['hold']} hold recommendations for your existing assets\n"
         if "watch" in action_counts:
+            summary += f"\n \n"
             summary += f"• {action_counts['watch']} assets to add to your watchlist\n"
         
-        summary += f"\nThese recommendations are based on the analysis of successful traders in your network, "
-        summary += f"taking into account their recent trading activity and performance metrics.\n"
+        summary += f"\n \n"
+        # Add AI-generated insights section
+        summary += "PinAI Agent analysis has noticed these insights:\n"
+        
+        # Analyze market sentiment from recommendations
+        buy_confidence = sum(r["confidence_score"] for r in recommendations if r["action"] == "buy") / max(1, action_counts.get("buy", 0))
+        sell_confidence = sum(r["confidence_score"] for r in recommendations if r["action"] == "sell") / max(1, action_counts.get("sell", 0))
+        
+        if buy_confidence > 0.7:
+            summary += f"\n \n"
+            summary += "• Strong buying opportunities in current market conditions\n"
+        if sell_confidence > 0.7:
+            summary += f"\n \n"
+            summary += "• Elevated selling pressure detected in some assets\n"
+        
+        # Portfolio optimization advice
+        if profit_loss > 0:
+            summary += f"\n \n"
+            summary += f"• Your portfolio is performing well (+${profit_loss:,.2f}). Consider rebalancing to lock in gains.\n"
+        else:
+            summary += f"\n \n"
+            summary += "• Market conditions suggest defensive positioning may be prudent.\n"
+        
+        # Add final network analysis
+        summary += "\nThese recommendations combine network analysis with AI-powered market insights "
+        summary += "to provide comprehensive investment guidance.\n"
         
         return summary

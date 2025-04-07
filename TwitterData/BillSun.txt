@@ -6,6 +6,7 @@ Post GTC dinner discussion on future AI trend https://t.co/msA3JvsPbL	3/19/2025,
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 NVDA DGX SPARK, your ultimate personal AI super cluster at home. This will enable more powerful personal AI than today’s local model run on phone and on laptop. https://t.co/JVXw2o2ZoN	3/19/2025, 8:31:15 PM	
@@ -13,6 +14,7 @@ NVDA DGX SPARK, your ultimate personal AI super cluster at home. This will enabl
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 TEE on GPU is an important push by crypto community https://t.co/Wr7sCLeLY1	3/19/2025, 5:18:25 PM	
@@ -20,6 +22,7 @@ TEE on GPU is an important push by crypto community https://t.co/Wr7sCLeLY1	3/19
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 This NVDA Kyber Midplane PCB is probably the most complex industry design of PCB i have ever seen. It will be used in Rubin generation to replace the old method that is not robust during shipment https://t.co/UowvTW0oui	3/19/2025, 5:17:38 PM	
@@ -27,6 +30,7 @@ This NVDA Kyber Midplane PCB is probably the most complex industry design of PCB
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 @ekang426 @ilblackdragon @NVIDIAGTC yeah I was in GTC too, great talk!	3/19/2025, 4:47:22 PM	
@@ -34,6 +38,7 @@ Bill Sun
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 NVDA GB200 and GB300 https://t.co/ZDdvBKNAIL	3/19/2025, 4:46:21 PM	
@@ -41,6 +46,7 @@ NVDA GB200 and GB300 https://t.co/ZDdvBKNAIL	3/19/2025, 4:46:21 PM
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 NVDA’s Robots https://t.co/ErTBAfsIVk	3/19/2025, 4:45:54 PM	
@@ -48,6 +54,7 @@ NVDA’s Robots https://t.co/ErTBAfsIVk	3/19/2025, 4:45:54 PM
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 Peek at NVDA GTC 2025 https://t.co/A6I3Rg82j4	3/19/2025, 4:13:29 PM	
@@ -55,6 +62,7 @@ Peek at NVDA GTC 2025 https://t.co/A6I3Rg82j4	3/19/2025, 4:13:29 PM
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 NVL 72 is gonna be one whole TEE GPU unit that can run one user’s future personal AI as a boost to user’s local device to run privacy preserving personal AI that is the really powerful (at least it can run around 1T size model) for each user on their personal data. https://t.co/IQmzGDou53	3/18/2025, 11:27:30 AM	
@@ -62,6 +70,7 @@ NVL 72 is gonna be one whole TEE GPU unit that can run one user’s future perso
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 Jensen Huang is showing the first step of NV link connecting AI in high bandwidth light speed https://t.co/o84eNTzfTm	3/18/2025, 11:04:38 AM	
@@ -69,6 +78,7 @@ Jensen Huang is showing the first step of NV link connecting AI in high bandwidt
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 @pinai_io @Qiaoqiao2001 Excited, PKU math is making AI personalized	3/18/2025, 11:03:13 AM	
@@ -76,6 +86,7 @@ Bill Sun
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 RT @pinai_io: We're excited to announce that @Qiaoqiao2001 is joining us as our founding protocol researcher! Shouqiao is a Ph.D. candidat…	3/18/2025, 11:02:41 AM	
@@ -83,6 +94,7 @@ RT @pinai_io: We're excited to announce that @Qiaoqiao2001 is joining us as our 
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 Looking forward, clearly the biggest AI native asset is to bring unique data as tokenized assets. Ethena and Ondo just open door of classical triFi assets, but data is the AI native new assets to tokenize. https://t.co/9d0ZIy8bUZ	3/18/2025, 10:57:19 AM	
@@ -90,6 +102,7 @@ Looking forward, clearly the biggest AI native asset is to bring unique data as 
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 Jensen Huang is talking at GTC about “ for every car factory, there will be a AI factory that build the AI for the car”. For Personal AI, our personal data wallet is empowering Personal AI as assistant factory, and our GOD model as AI school is our AI factory to constantly https://t.co/Cm1Ysqo8cr	3/18/2025, 10:54:18 AM	
@@ -97,6 +110,7 @@ Jensen Huang is talking at GTC about “ for every car factory, there will be a 
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 @DrJimFan well let’s make it next year!	3/18/2025, 10:48:16 AM	
@@ -104,6 +118,7 @@ Bill Sun
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 Jensen Huang from GTC: AI start from Cloud, but AI is going to everyone. I think AI belonging to each user is critical to protect each user from becoming irrelevant and even exploited from the cloud central AI for big company. @nvidia Project Digits is a big confirmation of this	3/18/2025, 10:44:54 AM	
@@ -111,6 +126,7 @@ Jensen Huang from GTC: AI start from Cloud, but AI is going to everyone. I think
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 @heyibinance @pinai_io	3/18/2025, 1:36:43 AM	
@@ -118,6 +134,7 @@ Bill Sun
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 @heyibinance https://t.co/wwGi3A4hKz, Personal AI powered by each user's data wallet. 基于每个用户的个人数据（google, FB, 微信，Amazon，Robinhood, 币安交易记录，crypto钱包记录等），为他们build自己的Personal AI，可以帮助用户生成个性化prompt/query/task，来指挥外部的各种ai agents，比如OpenAI https://t.co/ZO4pMrFQH8	3/18/2025, 1:36:29 AM	
@@ -125,6 +142,7 @@ Bill Sun
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 个人AI进化路径： 1. 助理 - 你的AI了解你，推荐任务等你确认。 2. 代理 - 它接管，有部分权限代表你做小的决策。 3. 化身 - 一个数字化的你做全部日常决策。 4. 个人硅基永生 - 上传你的大脑，在硅基世界中永生。 5. AI原生网络硅基文明 -	3/18/2025, 1:26:35 AM	
@@ -132,170 +150,10 @@ Bill Sun
 0 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Bill Sun
 @BillSun_AI
 Personal AI Evolution Unleashed! 1. Assistant - Your AI knows you, suggests tasks for your OK. 2. Agent - It takes charge, handles your to-dos. 3. Digital Twin - A digital YOU, alive in code. 4. Immortality - Upload your brain, live forever in silicon format. 5. Silicon	3/18/2025, 1:26:35 AM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-Data is at the center of useful AI utility https://t.co/ujA30UlZmz	3/17/2025, 5:43:15 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-Weekend consumer AI and gaming AI discussion with Fun insights: 1) Chinese founder so far is stronger at 2C AI startup 2) Super creator is more empowered by AI: Idea to real product demo speed up from 6 months to one day. the top 1% Genius get super productivity boost to https://t.co/cPEtkbcDwC	3/16/2025, 6:24:48 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-@deedydas I think there is a need to do also more personalized Stock analysis based on each user’s portfolio holding and watchlist	3/16/2025, 5:56:57 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-@deedydas @deedydas very insightful example. I am building a personal AI that knows how to create the Manus prompt to make the task more personalized to a specific user by using this user’s private personal information. 1) https://t.co/jWkYXsImQP 2) https://t.co/1bhMxfvGau	3/16/2025, 5:55:59 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-RT @DavideCrapis: d/acc day was extremely inspiring Here is a personal summary as one of the speakers and a link to full video stream belo…	3/16/2025, 5:46:37 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-Data is clearly the new moat, but I believe there will be more than the additive app method to collect data. @pinai_io is creating a new way: build personal data wallet and build user’s own personal AI for the user, guarding user’s time instead of making AI app most additive. https://t.co/MyjefgWADj	3/16/2025, 5:32:22 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-@cryptopunk7213 yeah data is clearly the new moat, I believe there will be more than the additive app method to collect data. @pinai_io is creating a new way: build personal data wallet and build user’s own personal AI for the user, guarding user’s time instead of making AI app most additive.	3/16/2025, 5:31:26 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-RT @DavideCrapis: People are slowly waking up to the importance of data for useful AI apps. Truth is, data is the moat not only for busine…	3/16/2025, 5:28:25 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-RT @pinai_io: The PIN AI God Model Whitepaper is here! A secure AI framework that learns, adapts, and improves with no central control or…	3/14/2025, 7:38:26 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-Excited to see all the creative agents from Berkeley’s Agent hackathon with Dawn! https://t.co/sO5FcFOWbg	3/13/2025, 3:41:04 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-Berkeley talk https://t.co/5UiDEdCebV	3/13/2025, 11:14:09 AM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-https://t.co/jWkYXsImQP	3/12/2025, 4:12:38 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-Personal ai filling in these Manus prompt by sharing personal information on food ordering https://t.co/W7U0eWlECK	3/12/2025, 4:10:01 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-RT @DavideCrapis: From the Open Source AI Summit yesterday: We are staring at a future that holds a lot of uncertainty for humanity. @Vita…	3/12/2025, 12:36:58 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-@EudemoniaCC good insight	3/11/2025, 10:54:42 AM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-Talk snippet 1 at @agihouse_org hackathon https://t.co/ZOdfCEh0ja	3/11/2025, 10:01:23 AM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-@DavideCrapis talk on @pinai_io https://t.co/nkxmEeThZi	3/10/2025, 11:05:03 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-@VitalikButerin https://t.co/4NDCYMIkDa	3/10/2025, 6:42:51 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-@hosseeb love to do it myself, I still do macro trades while doing startup	3/10/2025, 5:48:36 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-@VitalikButerin https://t.co/J8a5zIseZn	3/10/2025, 5:48:35 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-@DavideCrapis talk at ETH SF Open Source AI summit event, part 1 https://t.co/os1qFMOBtl	3/10/2025, 3:43:08 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-RT @ekang426: How it started at Open Source AI Summit SF https://t.co/YvrwRNDC7O	3/10/2025, 3:42:00 PM	
-0 Likes
-0 Retweets
-Link unavailable
-
-Bill Sun
-@BillSun_AI
-RT @ilblackdragon: Amazing line up tomorrow at Open Source AI Summit! Come by to learn across top researchers, founders and investors on l…	3/10/2025, 3:37:28 PM	
 0 Likes
 0 Retweets
 Link unavailable

@@ -1,70 +1,79 @@
 User	Tweet	Date	Stats	Link
 Mike Zhang
 @MikeZhang_Tech
-Big news! Our AI-powered dev platform just hit 1M users. Democratizing software development, one commit at a time 🚀 https://t.co/dev123	3/19/2025, 7:45:22 PM	
+Big news! Our AI-powered dev platform just hit 1M users. Democratizing software development, one commit at a time 🚀 https://t.co/dev123	3/19/2025, 7:45:22 PM
 156 Likes
 89 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Mike Zhang
 @MikeZhang_Tech
-Just wrapped up our keynote at #GTC2025. Incredible to share how we're leveraging NVIDIA's latest GPUs to make AI development accessible to everyone. https://t.co/gtc456	3/19/2025, 2:30:15 PM	
+Just wrapped up our keynote at #GTC2025. Incredible to share how we're leveraging NVIDIA's latest GPUs to make AI development accessible to everyone. https://t.co/gtc456	3/19/2025, 2:30:15 PM
 234 Likes
 112 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Mike Zhang
 @MikeZhang_Tech
-RT @TechCrunch: Breaking: CodeAI raises $150M Series C to revolutionize software development with AI. @MikeZhang_Tech shares vision for the future.	3/18/2025, 4:15:33 PM	
+RT @TechCrunch: Breaking: CodeAI raises $150M Series C to revolutionize software development with AI. @MikeZhang_Tech shares vision for the future.	3/18/2025, 4:15:33 PM
 445 Likes
 267 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Mike Zhang
 @MikeZhang_Tech
-Proud to announce our partnership with @Microsoft to integrate our AI dev tools into Visual Studio. Making AI-assisted coding mainstream! https://t.co/ms789	3/18/2025, 11:20:18 AM	
+Proud to announce our partnership with @Microsoft to integrate our AI dev tools into Visual Studio. Making AI-assisted coding mainstream! https://t.co/ms789	3/18/2025, 11:20:18 AM
 378 Likes
 198 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Mike Zhang
 @MikeZhang_Tech
-@OpenAI Great meeting yesterday! Excited about the possibilities of combining our technologies to empower developers worldwide.	3/17/2025, 2:45:52 PM	
+@OpenAI Great meeting yesterday! Excited about the possibilities of combining our technologies to empower developers worldwide.	3/17/2025, 2:45:52 PM
 89 Likes
 34 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Mike Zhang
 @MikeZhang_Tech
-Thinking about how AI is transforming startup culture. From ideation to deployment, what used to take months now takes days. Thread 🧵	3/17/2025, 10:15:29 AM	
+Thinking about how AI is transforming startup culture. From ideation to deployment, what used to take months now takes days. Thread 🧵	3/17/2025, 10:15:29 AM
 267 Likes
 156 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Mike Zhang
 @MikeZhang_Tech
-Joined @YCombinator's AI founders meetup today. Amazing to see so many entrepreneurs pushing the boundaries of what's possible with AI. https://t.co/yc012	3/16/2025, 7:30:44 PM	
+Joined @YCombinator's AI founders meetup today. Amazing to see so many entrepreneurs pushing the boundaries of what's possible with AI. https://t.co/yc012	3/16/2025, 7:30:44 PM
 198 Likes
 87 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Mike Zhang
 @MikeZhang_Tech
-New blog post: "Building a Billion-Dollar AI Company: Lessons Learned" - sharing our journey and key insights https://t.co/blog345	3/16/2025, 1:25:16 PM	
+New blog post: "Building a Billion-Dollar AI Company: Lessons Learned" - sharing our journey and key insights https://t.co/blog345	3/16/2025, 1:25:16 PM
 312 Likes
 178 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Mike Zhang
 @MikeZhang_Tech
-RT @VentureBeat: The rise of AI-first startups: How companies like @CodeAI are reshaping the tech landscape	3/15/2025, 4:50:33 PM	
+RT @VentureBeat: The rise of AI-first startups: How companies like @CodeAI are reshaping the tech landscape	3/15/2025, 4:50:33 PM
 223 Likes
 134 Retweets
 Link unavailable
 
+User	Tweet	Date	Stats	Link
 Mike Zhang
 @MikeZhang_Tech
-Excited to be speaking at @Stanford's AI Entrepreneurship Summit next week! Will be sharing insights on scaling AI products from 0 to 1M users. https://t.co/stan678	3/15/2025, 11:10:27 AM	
+Excited to be speaking at @Stanford's AI Entrepreneurship Summit next week! Will be sharing insights on scaling AI products from 0 to 1M users. https://t.co/stan678	3/15/2025, 11:10:27 AM
 289 Likes
 167 Retweets
 Link unavailable

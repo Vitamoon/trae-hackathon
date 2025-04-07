@@ -10,6 +10,7 @@ import httpx
 from src.data_processor import DataProcessor
 from src.recommendation_engine import RecommendationEngine
 from src.user_analyzer import UserAnalyzer
+from pinai_agent_sdk import PinAIClient
 
 # Load environment variables
 load_dotenv()
@@ -34,7 +35,8 @@ class SocialTradeInsight:
         self.data_processor = DataProcessor()
         self.user_analyzer = UserAnalyzer()
         self.recommendation_engine = RecommendationEngine()
-        
+        self.pinai_client = PinAIClient(api_key)
+
         print(f"SocialTradeInsight agent initialized with wallet: {wallet_address[:6]}...{wallet_address[-4:]}")
     
     def analyze_user(self, user_id: str, include_friends: bool = True) -> Dict[str, Any]:
@@ -98,37 +100,56 @@ class SocialTradeInsight:
         return result
     
     def register_with_pinai(self) -> Dict[str, Any]:
-        """Register the agent with PinAI platform.
-        
-        Returns:
-            Response from PinAI registration endpoint
-        """
-        # This is a placeholder for actual PinAI SDK integration
-        # In a real implementation, this would use the PinAI SDK to register the agent
-        print(f"Registering SocialTradeInsight agent with PinAI using API key: {self.api_key[:6]}...")
-        
-        agent_metadata = {
-            "name": "SocialTradeInsight",
-            "description": "A PinAI agent for personalized investment recommendations based on social and Web3 data",
-            "version": "1.0.0",
-            "capabilities": [
+        response = self.pinai_client.register_agent(
+            name="SocialTradeInsight",
+            description="A PinAI agent for personalized investment recommendations based on social and Web3 data",
+            capabilities=[
                 "social_media_analysis",
                 "web3_transaction_analysis",
                 "investment_recommendations",
                 "performance_comparison"
             ],
-            "wallet_address": self.wallet_address
-        }
-        
-        # Simulate PinAI registration response
-        response = {
-            "status": "success",
-            "agent_id": "sti_" + self.wallet_address[-8:],
-            "registered_at": "2025-03-20T12:00:00Z",
-            "message": "SocialTradeInsight agent successfully registered with PinAI"
-        }
-        
+            wallet_address=self.wallet_address
+        )
         return response
+        
+    def query_agent_capabilities(self, agent_id: str) -> Dict[str, Any]:
+        """Query another agent's capabilities using the PinAI SDK.
+        
+        Args:
+            agent_id: The ID of the agent to query
+            
+        Returns:
+            Dictionary containing the agent's capabilities and metadata
+        """
+        return self.pinai_client.query_agent(agent_id)
+        
+    def share_analysis_with_agent(self, agent_id: str, analysis_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Share analysis results with another PinAI agent.
+        
+        Args:
+            agent_id: The ID of the agent to share with
+            analysis_data: The analysis data to share
+            
+        Returns:
+            Response from the agent receiving the data
+        """
+        return self.pinai_client.send_to_agent(
+            agent_id=agent_id,
+            message_type="analysis_results",
+            payload=analysis_data
+        )
+        
+    def get_available_agents(self, capability_filter: Optional[str] = None) -> List[Dict[str, Any]]:
+        """Get list of available agents, optionally filtered by capability.
+        
+        Args:
+            capability_filter: Optional capability to filter agents by
+            
+        Returns:
+            List of agent metadata dictionaries
+        """
+        return self.pinai_client.list_agents(capability=capability_filter)
 
 # Demo function to showcase the agent's capabilities
 def run_demo():

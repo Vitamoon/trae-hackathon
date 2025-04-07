@@ -126,7 +126,7 @@ class DataProcessor:
         username = lines[0].strip()
         
         # Skip duplicate username line if present
-        start_idx = 1
+        start_idx = 0
         if len(lines) > 1 and lines[1].strip() == username:
             start_idx = 2
         
@@ -141,9 +141,6 @@ class DataProcessor:
         tweets = []
         current_tweet = {}
         
-        # Skip header lines if present
-        if len(lines) > start_idx and "User\tTweet\tDate\tStats\tLink" in lines[start_idx]:
-            start_idx += 1
         
         for i in range(start_idx, len(lines)):
             line = lines[i].strip()
@@ -209,7 +206,18 @@ class DataProcessor:
         data = {
             "holdings": {},
             "profit_loss": {},
-            "recent_trades": []
+            "recent_trades": [],
+            "social_sentiment": {},
+            "token_metrics": {}
+        }
+        
+        # Additional PinAI Agent specific data fields
+        data["pinai_metadata"] = {
+            "data_source": "web3_txt",
+            "processing_version": "1.1",
+            "compatibility": {
+                "pinai_agent": ">=1.0"
+            }
         }
         
         section = None
