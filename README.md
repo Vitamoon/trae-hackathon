@@ -1,7 +1,5 @@
 # YourPocket
 
-Thank you to ![PinAI Logo](img/logo-pinai.png)
-
 ## Overview
 
 PinAI is an AI-powered social trading platform that leverages Web3 and social media data to provide personalized investment recommendations. By analyzing trading patterns, social interactions, and market trends across your network, PinAI helps you make more informed investment decisions based on the collective intelligence of successful traders in your community.
