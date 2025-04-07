@@ -11,7 +11,7 @@ from user_analyzer import UserAnalyzer
 from recommendation_engine import RecommendationEngine
 
 # Set page configuration
-st.set_page_config(page_title="Investment Recommendation System", layout="wide")
+st.set_page_config(page_title="YourPocket Investment Recommendation System", layout="wide")
 
 # Initialize components
 data_processor = DataProcessor()
