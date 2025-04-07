@@ -121,11 +121,9 @@ Stored in text files in the `Web3Data` directory.
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Acknowledgements
 
+- Kaelan Yim
+- Thomas Sedl
 - PinAI for providing the underlying AI technology
 - The Web3 and social media data providers
