@@ -1,6 +1,6 @@
-# PinAI Social Trading Platform
+# YourPocket
 
-![PinAI Logo](img/logo-pinai.png)
+Thank you to ![PinAI Logo](img/logo-pinai.png)
 
 ## Overview
 
